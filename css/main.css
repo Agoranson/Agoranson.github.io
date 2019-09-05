@@ -1,0 +1,103 @@
+/* Random fonts I chose from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 
+ { 
+    font-family: "AvertaPE", Arial, Helvetica, "Nimbus Sans L", sans-serif; 
+    font-size: 600%; 
+    font-weight: 1000;
+    padding-right: 75%; 
+    line-height: 80%; 
+    padding-top: 12%; 
+    padding-left: 10%;
+ }
+
+ h2
+ { 
+    font-family: "AvertaPE", Arial, Helvetica, "Nimbus Sans L", sans-serif; 
+    font-size: 600%; 
+    font-weight: 1000;
+    padding-right: 75%; 
+    line-height: 80%;  
+    padding-left: 10%;
+ }
+
+ h3
+ { 
+    padding-left: 40%; 
+    position: relative; 
+    top: -120px ; 
+   padding-right: 10%; 
+   color: rgb(60, 60, 60); 
+ }
+body {
+    font-family: "AvertaPE", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+#header {
+    /* Great link for flexbox reference */
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 130%;
+
+    top: 5%;
+    width: 100%;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation__item {
+    display: inline-block;
+}
+
+.navigation__item a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navigation__item a:hover {
+    background-color: blueviolet;
+}
+
+.navigation__item a:active {
+    background-color: blueviolet;
+}
+
+.fullHeight {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.noStretch {
+    /* Link explaining this align-self thing */
+    /* https://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image */
+    align-self: center;
+    width: 300px;
+}
+
+.events 
+{ 
+  transform: rotate(90deg); 
+}
+.blue { background-color: blue; }
+.yellow { background-color: yellow; }
