@@ -103,7 +103,7 @@ body {
 .blue { background-color: blue; }
 .yellow { background-color: yellow; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
    
  h1 
  { 
