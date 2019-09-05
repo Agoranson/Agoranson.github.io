@@ -99,5 +99,63 @@ body {
 { 
   transform: rotate(90deg); 
 }
+
 .blue { background-color: blue; }
 .yellow { background-color: yellow; }
+
+@media only screen and (max-width: 600px) {
+   
+ h1 
+ { 
+    font-family: "AvertaPE", Arial, Helvetica, "Nimbus Sans L", sans-serif; 
+    font-size: 200%; 
+    font-weight: 600;
+    padding-right: 75%; 
+    line-height: 80%; 
+    padding-top: -15%; 
+    padding-left: 10%;
+ }
+ h2
+ { 
+    font-family: "AvertaPE", Arial, Helvetica, "Nimbus Sans L", sans-serif; 
+    font-size: 120%; 
+    font-weight: 500;
+    padding-right: 75%; 
+    line-height: 80%;  
+    padding-left: 10%;
+ }
+ h3
+ { 
+    padding-left: 40%; 
+    position: relative; 
+    top: 150px ; 
+   padding-right: 10%;
+   color: rgb(100, 100, 100); 
+   font-size: 50%; 
+   font-weight: 100;
+ }
+
+ #header {
+    /* Great link for flexbox reference */
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 50%;
+
+    top: 5%;
+    width: 100%;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.noStretch {
+    /* Link explaining this align-self thing */
+    /* https://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image */
+    align-self: center;
+    width: 150px;
+}
+
+}
